@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css">	
+	</head>
+	<body>
+		<h1 class="title">Let's solve your Nonogram!</h1>
+		<table id="config-table">
+			<tr>
+				<th>		
+					Nonogram Dimensions:
+				</th>
+				<th>
+					<input type="number" id="nonogram-width" max="30" min="1" onkeyup="enforceMinMax(this)" />
+				</th>
+				<th>
+					<input type="number" id="nonogram-height" max="30" min="1" onkeyup="enforceMinMax(this)" />
+				</th>
+			</tr>
+			<tr>
+				<th>		
+					Hint Dimensions:
+				</th>
+				<th>
+					<input type="number" id="hint-width" max="30" min="1" onkeyup="enforceMinMax(this)"/>
+				</th>
+				<th>
+					<input type="number" id="hint-height" max="30" min="1" onkeyup="enforceMinMax(this)"/>
+				</th>
+			</tr>
+		</table>
+		<table id="main-table"></table>	
+		
+		<div id="invalid-table" class="closed">
+			<img src="resource/warn.png"/>
+			<h2>Invalid Table!</h2>
+		</div>
+
+		<div id="multi-table" class="closed">
+			<img src="resource/warn.png"/>
+			<h2>Table has multiple solutions!</h2>
+		</div>
+
+		<script src="util.js"></script>
+		<script src="solve.js"></script>
+		<script src="cellinput.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
