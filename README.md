@@ -1,5 +1,5 @@
 # nonogram-solver
-Created for the "The art of solving Nonograms" workshop in TUMO\
+Created for the "The art of solving Nonograms" workshop in TUMO
 
 Just input the hint numbers and the website will solve it for you.
 
